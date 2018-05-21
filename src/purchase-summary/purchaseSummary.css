@@ -19,9 +19,6 @@ div * {
 
 .order-summary-saving-red {
   color : red;
-  /* float : right; */
-  /* position: absolute;
-  right: 6px; */
 }
 
 .order-summary-items-list {
@@ -74,9 +71,4 @@ div * {
 
 .order-summary-cart-item-price {
   font-weight: 400px;
-}
-
-.order-summary-promocode:focus {
-  border : 1px solid black;
-  color : red;
 }

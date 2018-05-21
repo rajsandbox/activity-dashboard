@@ -34,7 +34,7 @@ export default class GrandTotal extends Component {
     }
 
     render = ({ expand, coupon, showPromo } = this.state, { grandTotal, ItemsList } = this.props) => {
-        console.log("ItemsList =>", ItemsList)
+        let showPromoClass = !showPromo ? `order-summary-on-hover` : ``;
         return (
             <div>
                 <div className={`order-summary-grand-total order-summary-line`}>
@@ -59,10 +59,9 @@ export default class GrandTotal extends Component {
                 {/* Apply promo code */}
                 <div>
                 {
-                    showPromo ? <span  onClick={() => this.setState({ showPromo : !showPromo })}
-                                       className={`order-summary-on-hover`}>Apply promo code + </span> :
+                    showPromo ? <span  onClick={() => this.setState({ showPromo : !showPromo })}   className={showPromoClass}>Apply promo code + </span> :
                                 <div>
-                                    <span onClick={() => this.setState({ showPromo : !showPromo })}>Hide promo code -</span>
+                                    <span onClick={() => this.setState({ showPromo : !showPromo })}   className={showPromoClass}>Hide promo code -</span>
                                     <div className={`order-summary-promocode`}>
                                         <input onChange={e => this.applyPromoCode(e)} value={coupon} />
                                         <button onClick={this.submitPromoCode}>Apply</button>

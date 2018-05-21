@@ -13,14 +13,8 @@ function orderTotal(state = initialState, action) {
             const newAppliedPromos = [...state.AppliedPromos,action.promoDetails];
              return Object.assign({},state,{AppliedPromos:newAppliedPromos });
          } else {
-             return state
-         }
-
-        //  return Object.assign({}, state, {
-        //     AppliedPromos : [action.promoDetails.promoCode]
-        //  });
-        //   !PROMOCODE_LIST.includes(action.data) ? 
-       
+             return state;
+         }   
         default:
             return state;
     }

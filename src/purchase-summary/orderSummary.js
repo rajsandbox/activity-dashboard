@@ -16,6 +16,7 @@ export default class OrderSummary extends Component {
                         <span>Subtotal </span>
                         <span className={`Discount order-summary-price text-right`}>${this.props.subtotal}</span>
                     </div>
+                    {/* Pick up savings tooltip */}
                     <div className={`order-summary-saving tooltip`}>
                         <span>
                         <a className={`order-summary-saving-text`} onClick={() => this.setState({open : !open})}>Pickup savings</a>
