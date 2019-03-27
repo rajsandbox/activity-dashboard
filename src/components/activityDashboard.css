@@ -2,10 +2,10 @@
   justify-self: center;
   font-family: BogleWeb,Helvetica Neue,Helvetica,Arial,sans-serif;
   border : solid 1px gray;
-  border-radius: 8px;
-  width : 60%;
+  border-radius: 0px;
+  width : 100%;
   margin : 1em;
-  padding : 10px;
+  padding : 0px;
   height: auto;
 }
 
@@ -32,30 +32,11 @@ div * {
   /* display: inline-block; */
 }
 
-.show-tooltip {
-    width: 15em;
-    background-color: gray;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    margin-left: -60px;
-}
-
 .hide-tooltip {
   display : none;
 }
 
-.order-summary-grand-total {
-  margin-top: 10px;
-  font-weight: 900px;
-  font-size: 1.5em;
-}
+
 .text-right {
   float : right;
 }
@@ -70,5 +51,5 @@ div * {
 }
 
 .order-summary-cart-item-price {
-  font-weight: 400px;
+  font-weight: 400;
 }

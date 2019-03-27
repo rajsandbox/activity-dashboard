@@ -11,7 +11,6 @@ export function addPromoCode(promoCode) {
     };
 }
 
-
 const getCouponValue = (couponName) => {
     switch(couponName){
         case 'DISCOUNT' : 

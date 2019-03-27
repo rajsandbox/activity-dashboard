@@ -1,5 +1,5 @@
 {
-  "name": "purchase-summary",
+  "name": "activity-dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

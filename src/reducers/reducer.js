@@ -1,9 +1,9 @@
 import { ADD_PROMOCODE } from '../actions/index.js';
-import { ItemsList } from '../itemsList';
+import { activityData } from '../activityData';
 
 const initialState = {
     AppliedPromos : [],
-    ItemsList : ItemsList
+    activityData : activityData
 };
 
 function orderTotal(state = initialState, action) {
@@ -29,5 +29,4 @@ function checkPromoCodeExists(appliedPromos,promoDetails) {
     });
     return isExists;
 }
-
 export default orderTotal;
